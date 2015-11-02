@@ -1,7 +1,7 @@
 <JZML>
 <PROJECT version="5220" width="568" height="276" osc_target="-1" midi_target="0" kbmouse_target="-1" skin="Flat"/>
 <WINDOW class="JAZZINTERFACE" text="Default" x="0" y="0" width="568" height="276" state="1" group="0" font="tahoma,11,0" >
-<WINDOW class="Multiball" text="rotaries_1_2" x="28" y="0" width="180" height="180" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="0" kbmouse_target="-2" capture="1" color="1596013" cursor="1" ephemere="0" grid="0" grid_steps="1,1" label="0" multicolor="0" multilabel="1" nbr="1" physic="2" polyphony="0" zoom="1.000000">
+<WINDOW class="Multiball" text="rotaries_1_2" x="28" y="0" width="180" height="180" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="0" kbmouse_target="-2" capture="1" color="1596013" cursor="1" ephemere="0" grid="0" grid_steps="1,1" label="0" multicolor="0" multilabel="0" nbr="1" physic="2" polyphony="0" zoom="1.000000">
 <PARAM name="x=" value="0.923216" send="17" osc_target="0" osc_trigger="1" osc_message="/rotaries_1_2/x" midi_target="-1" midi_trigger="1" midi_message="0xB0,0xB0,71,71" midi_scale="9030,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <PARAM name="y=" value="0.711281" send="17" osc_target="0" osc_trigger="1" osc_message="/rotaries_1_2/y" midi_target="-1" midi_trigger="1" midi_message="0xB0,0xB0,72,72" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <PARAM name="z=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/rotaries_1_2/z" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -16,7 +16,7 @@
 <VARIABLE name="holdX=0" send="0" osc_target="0" osc_trigger="1" osc_message="/rotaries_1_2/holdX" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="holdY=0" send="0" osc_target="0" osc_trigger="1" osc_message="/rotaries_1_2/holdY" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <MIDIOUT name="X" message="0xB0" data1="71" data2="range(x,  range_rotary_2.x[0], range_rotary_2.x[1])*127" channel="1" trigger_script="" target="0" trigger="1,1,1,1" scale="0,16383" flag="1"/>
-<MIDIOUT name="Y" message="0xB0" data1="72" data2="range(x,  range_rotary_1.x[0], range_rotary_1.x[1])*127" channel="1" trigger_script="" target="0" trigger="1,1,1,1" scale="0,16383" flag="1"/>
+<MIDIOUT name="Y" message="0xB0" data1="72" data2="range(y,  range_rotary_1.x[0], range_rotary_1.x[1])*127" channel="1" trigger_script="" target="0" trigger="1,1,1,1" scale="0,16383" flag="1"/>
 </WINDOW>
 <WINDOW class="Multiball" text="rotaries_3_4" x="333" y="0" width="180" height="180" id="1" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="0" kbmouse_target="-2" capture="1" color="1596013" cursor="1" ephemere="0" grid="0" grid_steps="1,1" label="0" multicolor="0" multilabel="0" nbr="1" physic="2" polyphony="0" zoom="1.000000">
 <PARAM name="x=" value="0.940272" send="17" osc_target="0" osc_trigger="1" osc_message="/rotaries_3_4/x" midi_target="-1" midi_trigger="1" midi_message="0xB0,0xB0,73,73" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -97,7 +97,7 @@
 <VARIABLE name="drag=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/range_rotary_3/drag" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
 <WINDOW class="Monitor" text="midi_cc_values_x_y" x="353" y="143" width="153" height="37" id="11" state="245" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="0" precision="0" unit="" value="1">
-<VARIABLE name="value={range(Rotaries_3_4.x,  range_rotary_4.x[0], range_rotary_4.x[1])*127,  range(Rotaries_3_4.y,  range_rotary_3.x[0], range_rotary_3.x[1])*127}" value="98.660629,26.496389,99.938026,26.496389" send="0" osc_target="0" osc_trigger="1" osc_message="/midi_cc_values_x_y/value" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="value={range(rotaries_3_4.x,  range_rotary_4.x[0], range_rotary_4.x[1])*127,  range(rotaries_3_4.y,  range_rotary_3.x[0], range_rotary_3.x[1])*127}" send="0" osc_target="0" osc_trigger="1" osc_message="/midi_cc_values_x_y/value" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
 <WINDOW class="Range" text="range_rotary_1" x="0" y="0" width="28" height="180" id="12" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="1596013" grid="0" grid_steps="1" horizontal="0" label="0" physic="0">
 <PARAM name="x=" value="0.208633,0.812950" send="17" osc_target="0" osc_trigger="1" osc_message="/range_rotary_1/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -130,6 +130,9 @@
 </WINDOW>
 <WINDOW class="Text" text="Text2" x="0" y="237" width="208" height="39" id="18" state="245" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" content="Pitch">
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Text2/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Monitor" text="midi_cc_values_x_y2" x="44" y="143" width="153" height="37" id="19" state="245" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="0" precision="0" unit="" value="1">
+<VARIABLE name="value={range(rotaries_1_2.x,  range_rotary_2.x[0], range_rotary_2.x[1])*127,  range(rotaries_1_2.y,  range_rotary_1.x[0], range_rotary_1.x[1])*127}" send="0" osc_target="0" osc_trigger="1" osc_message="/midi_cc_values_x_y2/value" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
 </WINDOW>
 </JZML>
