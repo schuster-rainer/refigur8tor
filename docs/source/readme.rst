@@ -52,8 +52,8 @@ A comprehensive setup guide is following later. For now here is a short list of
 how to get started
 
 
-Connect the iOS device
-++++++++++++++++++++++
+Connect iOS to your host
+++++++++++++++++++++++++
 
 * Connect your iDevice to your Mac or PC to be able to receive MIDI messages
 
@@ -61,14 +61,15 @@ Connect the iOS device
 
 
 USB
-^^^
++++
+
 
 * Start midiLE on your MAC (right click and open for the first time)
 * Put it to the App folder
 * Start midiLE (midimittr) on your iPhone
 
 Bluetooth
-^^^^^^^^^
++++++++++
 
 * iOS with midimittr
 
@@ -92,7 +93,7 @@ Bluetooth
 
 
 Lemur
-^^^^^
++++++
 
 * iOS
 
@@ -123,7 +124,7 @@ Lemur
     * Or click download first, to download the template from your phone to the Lemur on your MAC
 
 Reason
-^^^^^^
+++++++
 
 For Reason you have to go into the preferences (cmd+,)
 
