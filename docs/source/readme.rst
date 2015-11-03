@@ -13,6 +13,7 @@ Either start from scratch and create an own combinator or use a well crafted one
 For example Thors Hammer created by hydlide. See the :ref:`ReFills <REFILLS>` section at the end.
 Or just use your favourite ones. If you have some good free ones, or recommended commercial ones with a demo. Add it to the document and create a pull request.
 
+The source code for this project is hosted on https://github.com/schuster-rainer/refigur8tor
 
 Usage
 -----
