@@ -181,6 +181,3 @@ Developing
 
 * `Reason Help <https://www.propellerheads.se/support/downloads/reason-documentation-and-help-files/>`_
 * `Reason 8.3 MIDI Implementation Chart <http://cdn.propellerheads.se/Reason8/Manuals/Reason_83_MIDI_Implementation_Chart.pdf>`_
-
-
-192.168.178.21
