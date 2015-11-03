@@ -1,3 +1,4 @@
+
 refigur8tor
 ===========
 
@@ -10,9 +11,6 @@ Right now it has two Multiballs controlling the Knobs on the combinator, the 4 b
 I will soon enhance it for the Performance controls like breath and so on. I'm very happy right now with the performance.
 Either start from scratch and create an own combinator or use a well crafted one, that's balanced for tweaking.
 
-For example have a look at Thors Hammer created by hydlide. See the :ref:`ReFills <REFILLS>` section at the end.
-Or just use your favourite ones. If you have some good free ones, or recommended commercial ones with a demo. Add it to the document and create a pull request.
-
 
 Usage
 -----
@@ -23,159 +21,8 @@ The left MultiBall controls Rotary 1 and 2, the right one 3 and. The range slide
 
 Button 1 to 4 switches the according knobs on and off. Pitch and Wheel does the same with its counterparts.
 
+Documentation
+------------
 
-The lemur folder contains templates for the Liine Lemur app
+The full documentation is available at https://refigur8tor.readthedocs.org
 
-iOS: https://itunes.apple.com/app/lemur/id481290621?mt=8
-Android: https://play.google.com/store/apps/details?id=net.liine.lemurapp
-
-There is also a  md12 folder containing templates for Midi Designer 12 from which I started of several weeks 
-ago (https://itunes.apple.com/app/midi-designer-12-professional/id685657174?mt=8) ...
-It is not as feature rich and the instructions here will only guide you through with Lemur.
-But it's even easier to start. For the connection Just click the template on your phone
-(it will open up in Midi Designer). And go to setup entering the IP of your host.
-Follow the Connection guide for MIDI and Reason.
-
-If you want to have a working template in TouchOSC you have to donate it. Im willing to create one. https://itunes.apple.com/app/touchosc/id288120394
-
-
-Setup
------
-
-Right now they are tested on an iPhone5s connecting to Reason 8.3 on Mac OS X Yesmite (10.10)
-
-Feel free to change, ask questions, send pull requests.
-
-MIT-License
-
-A comprehensive setup guide is following later. For now here is a short list of
-how to get started
-
-
-Connect the iOS device
-++++++++++++++++++++++
-
-#. Connect your iPhone to your Mac or PC to be able to receive MIDI messages
-
-  #. On my MAC I'm using MIDI over Bluetooth or MIDI over USB (low latency enough for me right now). Have a look at midiLE for Mac and iOS (http://www.s-r-n.de/midile/)
-
-#. For USB
-
-  #. Start midiLE on your MAC (right click and open for the first time)
-     
-    #. Put it in the App folder
-
-  #. Start midiLE (midimittr) on your iPhone
-
-#. For Bluetooth
-
-  #. On your iPhone I'm using midimittr
-
-    #. Click the menu icon
-    #. Advertisement
-    #. Enter a name for your Phone
-    #. Advertise MIDI Service
-
-  #. On the MAC
-
-   #. Open Audio MIDI Setup
-   #. Double Click the Bluetooth Icon
-   #. Wait for your Phone name to appear in the list
-   #. hit the connect button when available
-
-#. On the iPhone open midiLE
-
-  #. Open the Menu
-  #. Go to Routing and click the sources and the destinations, so that the messages are routed properly
-  #. Now the midiLE icon on your Mac should flash and show you a new connection
-
-For Lemur
-#. Start Lemur on your iPhone
-
-  #. Hit the settings button
-  #. Scroll down to MIDI Targets
-  #. Touch Add Target or use the existing one
-
-    #. The _From_ is left blank
-    #. Touch the _To_ field and select the destination
-
-      #. For USB it is: _YourPhoneName_ midiLE USB destination
-
-  #. Add a target for every connection type (USB and Bluetooth) when using them both
-
-#. On your MAC
-
-  #. Double click the lemur template
-  #. Lemur opens
-  #. Click the _Play_ button
-
-    #. A connection window pops up
-    #. if Lemur runs on your phone and is connected to the same Wi-Fi iy will be listed here
-    #. Select it and hit _Connect_ if you wanna upload the template.
-       
-      #. Be cautious here. It will replace whatever you have on your phone and is unsaved
-       
-    #. Or click download first, to download the template from your phone to the Lemur on your MAC
-
-
-For Reason you have to go into the preferences (cmd+,)
-
-#. Click Control Surfaces
-#. Click Add
-#. For Manufacturer select _Other_
-#. For model choose MIDI Control Surface (or Keyboard)
-#. I name mine distinct to the connection type and create a new Control Surfaces for every connection type, as I sometimes use USB Midi, sometimes Bluetooth MIDI
-#. For name I put in
-   
-  #. iPhone USB MIDI Control Surface
-  #. as I'm using USB and the Surface driver here
-
-#. For MIDI input
-
-  #. Click MIDI Input and select midiLE USB Source or your bluetooth connection
-  #. Alternatively click _Find_ and hit a knob, multiball or button to generate a midi message. Reason will receive it and select the INPUT based on this
-
-
-Troubleshooting
----------------
-
-Seems a lot to do, but once setup, you just have to do the connection thing (start midiLE and connect to USB or open Audio MIDI setup and connect your iPhone) and launch lemur on your touch device. 
-
-
-If there are any problems in the setup there check your connectivity first. USB Midi is the easiest one. It won't timeout and has superior latency. In case there is no controller moving in Reason:
-
-Open Midi Monitor and move some controls on your touch device. If no message shows up here there is a connection issue. From time to time (happens for me when using Bluetooth and the connection times out) You have to close the Midi Monitor Window (cmd+q) and create a new one (cmd+n) because it won't register any messages. So make sure that this is not  the case and you are trapped into believing it is a connection issue.
-
-For Midi Monitor or a Windows alternative have a look at here:
-https://www.native-instruments.com/de/support/knowledge-base/show/998/how-to-monitor-the-input-of-a-midi-controller/
-
-
-If you are running windows and want to use it there have a look at rtpMidi. Don't know whether this works with Bluetooth or USB Midi ...
-http://www.tobias-erichsen.de/software/rtpmidi.html
-
-
-
-
-TIPS
-----
-
-#. If you wan't to preserver some tweaks on your phone save the template with a new name
-#. If you want to save the parameter settings on your phone
-
-
-.. _REFILLS:
-
-ReFills
--------
-
-* `Reason Expoerts <http://www.reasonexperts.com/refills-and-patches/reason-refills/>`
-
-
-Developing
-----------
-
-* `Reason Help <https://www.propellerheads.se/support/downloads/reason-documentation-and-help-files/>`
-* `Reason 8.3 MIDI Implementation Chart <http://cdn.propellerheads.se/Reason8/Manuals/Reason_83_MIDI_Implementation_Chart.pdf>`
-
-
-192.168.178.21
