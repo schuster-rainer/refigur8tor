@@ -5,7 +5,8 @@ refigur8tor
 About
 -----
 
-ReFigur8tor - initially ReFigur8thor (with puns intended of course) - is a control template for a Reason Combinator.
+ReFigur8tor - initially ReFigur8thor (with puns intended of course) - started as a control template for a Reasons Combinator and will
+eventually grow into a Remote Codec and templates for all Devices.
 Right now it has two Multiballs controlling the Knobs on the combinator, the 4 buttons as well as Pitch Bend and Modulation Wheel.
 
 I will soon enhance it for the Performance controls like breath and so on. I'm very happy right now with the performance.

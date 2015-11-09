@@ -1,0 +1,5 @@
+#! /bin/bash
+
+mkdir -p ~/"Library/Application Support/Propellerhead Software/Remote/"
+cp -r ./Reason/Remote/* ~/"Library/Application Support/Propellerhead Software/Remote/"
+

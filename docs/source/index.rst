@@ -12,6 +12,11 @@ Contents:
    :maxdepth: 2
    
    readme
+   setup
+   troubleshooting
+   develop
+   reason
+   refills
 
 
 Indices and tables

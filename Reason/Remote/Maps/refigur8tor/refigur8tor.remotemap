@@ -1,0 +1,18 @@
+Propellerhead Remote Mapping File
+File Format Version	1.0.0
+Control Surface Manufacturer	Lemur
+Control Surface Model	refigur8tor
+Map Version	1.0.0
+
+Scope	Propellerheads	Combinator
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+Map	Rotary1		Rotary 1
+Map	Rotary2		Rotary 2
+Map	Rotary3		Rotary 3
+Map	Rotary4		Rotary 4
+Map	Button1		Button 1
+Map	Button2		Button 2
+Map	Button3		Button 3
+Map	Button4		Button 4
+Map	ModWheel		Mod Wheel
+
