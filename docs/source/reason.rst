@@ -179,7 +179,8 @@ Status Bytes:
 #. matching any note velocity and assign it to value (xx)
 
 .. code-block:: lua
-    pattern = "90 3C xx"
+
+   pattern = "90 3C xx"
 
 
 Example 4
@@ -189,7 +190,7 @@ Binary pattern matching.
 
 Match any Note On or Off and assign the fourth bit to value x (**<100x>?**) where the number is 61 and map the first bit of the velocity to z.
 
-The first status byte is **<100x>?** where the first 4 bits of the status byte are matched to only catch note on/off. For reference have a look at the `Status Bytes Specification <http://www.midi.org/techspecs/midimessages.php#2`_. The second byte is ignore as it can have any value denoted by the wildcard **?**
+The first status byte is **<100x>?** where the first 4 bits of the status byte are matched to only catch note on/off. For reference have a look at the `Status Bytes Specification <http://www.midi.org/techspecs/midimessages.php#2>`_. The second byte is ignore as it can have any value denoted by the wildcard **?**
 
 
 #. matching any **Note On/Of** (first 3 bits) and assign the fourth to x. The **?** matches any other four bits of this first status byte
@@ -223,7 +224,7 @@ API
    :param manufacturer: The manufacturer string from your codec
                         which the users selects in the Surface Setup
    :param model:        The specific model which is select in the setup
-               zR         from a manufacturer. You can use it to define different
+                        from a manufacturer. You can use it to define different
                         models in one controller.lua and to distinguish
                         which one the user has selected.
 

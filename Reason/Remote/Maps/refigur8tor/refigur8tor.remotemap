@@ -6,13 +6,32 @@ Map Version	1.0.0
 
 Scope	Propellerheads	Combinator
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
-Map	Rotary1		Rotary 1
-Map	Rotary2		Rotary 2
-Map	Rotary3		Rotary 3
-Map	Rotary4		Rotary 4
-Map	Button1		Button 1
-Map	Button2		Button 2
-Map	Button3		Button 3
-Map	Button4		Button 4
-Map	ModWheel		Mod Wheel
+Map	Rotary 1		Rotary 1
+Map	Rotary 2		Rotary 2
+Map	Rotary 3		Rotary 3
+Map	Rotary 4		Rotary 4
+Map	Button 1		Button 1
+Map	Button 2		Button 2
+Map	Button 3		Button 3
+Map	Button 4		Button 4
+Map	Mod Wheel		Mod Wheel
+Map	Pitch Bend		Pitch Bend
+
+
+Scope	Propellerheads	Reason Document
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+Map	Stop		Stop
+Map	Play		Play
+Map	Record		Record
+Map	Rewind		Rewind
+Map	Fast Forward		Fast Forward
+
+Scope	Propellerheads	Master Keyboard
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+Map	Keyboard		Keyboard
+Map	Pitch Bend		Pitch Bend
+Map	Mod Wheel		Mod Wheel
+Map	Channel Pressure		Channel Pressure
+Map	Expression		Expression
+Map	Damper Pedal		Damper Pedal
 

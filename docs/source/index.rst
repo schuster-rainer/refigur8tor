@@ -10,13 +10,14 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-   
+
    readme
    setup
    troubleshooting
    develop
    reason
    refills
+   lemur
 
 
 Indices and tables

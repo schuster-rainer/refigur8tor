@@ -66,7 +66,7 @@ MIDI
 
 Midi Monitor Apps
 
-* Mac - `Snoize MIDI Monitor <http://www.snoize.com/MIDIMonitor/`_
+* Mac - `Snoize MIDI Monitor <http://www.snoize.com/MIDIMonitor/>`_
 * Windows - `MIDI-OX <http://www.midiox.com/>`_
 
 
